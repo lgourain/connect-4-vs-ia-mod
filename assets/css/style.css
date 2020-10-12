@@ -1,0 +1,144 @@
+:root {
+  --widthCarre: 75px;
+  --widthJeton: 60px;
+  --couleurRouge: #FF0000;
+  --couleurJaune: #FFAE00;
+  --couleurBleue: #002AE0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+    font-family: 'Spicy Rice', cursive;
+	min-width: 100%;
+	min-height: 100vh;
+	background: url("./img/background.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide {
+	display: none !important;
+}
+
+.popup-background {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	z-index: 9;
+	background: rgba(0,0,0,0.8);
+}
+
+.popup-box {
+	width: 500px;
+	z-index: 10;
+	background: rgb(184,184,184);
+	box-shadow: 3px 3px 3px rgba(184,184,184,0.8);
+	border: 1px solid rgb(140,140,140);
+	padding: 30px 20px 10px 20px;
+}
+
+.form {
+	width: 100%;
+	height: 100%;
+}
+
+.form > h1 {
+	margin: 0;
+}
+
+.inputGroup {
+	font-size: 1.2rem;
+	padding: 3px 0;
+	margin: 7px 0;
+	background: white;
+}
+
+#jouer {
+	font-size: 1.2rem;
+	margin-top: 10px;
+}
+
+.logo {
+	width: 90px;
+	position: absolute;
+}
+
+.logo.n1 {
+	top: 10px;
+	left: 10px;
+}
+
+.logo.n2 {
+	top: 10px;
+	right: 10px;
+}
+
+.score-board {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(7 * var(--widthCarre));
+}
+
+#joueur {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#score-joueur1 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: var(--couleurRouge);
+}
+
+#score-joueur2 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: var(--couleurJaune);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre);
+  grid-template-rows: var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre) var(--widthCarre);
+}
+
+.carre {
+  width: var(--widthCarre);
+  height: var(--widthCarre);
+  background-color: lightgrey;
+  border: 2px solid var(--couleurBleue);
+  border-bottom-width: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colonne > .carre:last-child {
+	border-bottom: 2px solid var(--couleurBleue);
+}
+
+.jeton {
+	width: var(--widthJeton);
+	height: var(--widthJeton);
+	border-radius: 50%;
+	margin: auto;
+}
+
+.rouge {
+	background-color: var(--couleurRouge);
+}
+
+.jaune {
+	background-color: var(--couleurJaune);
+}

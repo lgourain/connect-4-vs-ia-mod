@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puissance 4</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<div class="main">
+
+		<div class="popup-background">
+			<div class="popup-box">
+				<div class="form">
+					<h1>Choisissez le mode de jeu :</h1>
+					<div class="inputGroup">
+						<input type="radio" name="mode-jeu" value="normal" id="normal" checked="checked" />
+						<label for="normal">Jouer avec un ami</label>
+					</div>
+					<div class="inputGroup">
+						<input type="radio" name="mode-jeu" value="ordinateur" id="=ordinateur" />
+						<label for="ordinateur">Jouer contre l'ordinateur</label>
+					</div>	
+  					<input type="submit" id="jouer" value="Jouer">
+  				</div>
+			</div> 
+		</div> 
+
+		<img src="./img/logo.png" alt="logo" class="logo n1">
+		<img src="./img/logo.png" alt="logo" class="logo n2">
+		<div class="score-board">			
+			<p>Score de joueur1 : <span id="score-joueur1">0</span></p>
+			<p><span id="joueur" class="rouge">JOUEUR1</span></p>
+			<p>Score de joueur2 : <span id="score-joueur2">0</span></p>
+		</div>
+		<div class="container">
+		  <div class="colonne" data-index="0">
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		  </div>
+		  <div class="colonne" data-index="1">
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		  </div>
+		  <div class="colonne" data-index="2">
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div> 
+		  </div>
+		  <div class="colonne" data-index="3">
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div> 
+		  </div>
+		  <div class="colonne" data-index="4">
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div> 
+		  </div>
+		  <div class="colonne" data-index="5">
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		  </div>
+		  <div class="colonne" data-index="6">
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div>
+		    <div class="carre"></div> 
+		  </div>
+		</div>
+	</div>
+</body>
+<script type="module" src="./js/script.js"></script>
+</html>
